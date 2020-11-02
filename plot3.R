@@ -42,7 +42,7 @@ plot(dataSubset$datetime, dataSubset$Sub_metering_1, type = "n", ylab = "Energy 
 lines(dataSubset$datetime, dataSubset$Sub_metering_1, col = "black")
 lines(dataSubset$datetime, dataSubset$Sub_metering_2, col = "red")
 lines(dataSubset$datetime, dataSubset$Sub_metering_3, col = "blue")
-legend("topright", cex=0.9,  c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"),lty = c(1, 1, 1))
+legend("topright" , col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  ") ,lty=c(1,1), lwd=c(1,1))
 
 # export the plot to a png file
 dev.copy(png, file = "plot3.png", height = 480, width = 480)
