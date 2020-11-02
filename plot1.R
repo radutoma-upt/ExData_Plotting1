@@ -4,6 +4,7 @@
 # read in data files
 
 # Initialize variables
+rm(list = ls())
 
 fileURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 fileArchiveName <- 'household_power_consumption.zip'
@@ -20,7 +21,6 @@ fileName <- 'household_power_consumption.txt'
 unzip(fileArchiveName)
 
 #load the data
-rm(list = ls())
 data <- read.table(fileName, header = T, sep = ";", na.strings = "?")
 
 
